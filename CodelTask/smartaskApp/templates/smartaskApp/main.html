@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
     <img src="{% static '/static/smartaskApp/bgimg.jpg' %}" alt="">
 
+
     <style>
         body {
             background: url("../static/smartaskApp/bgimg.jpg");
@@ -22,15 +23,18 @@
             padding-top: 5px;
         
         }
-
-        h1,
+        h1 {
+            color:#000000;
+            font-family: 'Raleway', sans-serif;
+        }
         h2,
         h3,
         h4,
         h5,
-        h6,
+        h6
             {
             font-family: 'Raleway', sans-serif;
+            
         }
 
         a,
@@ -38,10 +42,11 @@
             color: #000000
         }
 
+        
         .container {
-            max-width: 1300px;
+            max-width: 1080px;
             margin: auto;
-            background-color: rgb(151, 151, 151);
+            background-color: rgba(218, 193, 193, 0.74);
             -webkit-box-shadow: 2px 2px 13px -4px rgba(114, 114, 114, 0.21);
             box-shadow: 2px 2px 13px -4px rgba(143, 143, 143, 0.21);
         }
@@ -52,11 +57,11 @@
             color: rgb(255, 255, 255);
             padding: 10px;
             border-radius: 5px 5px 0 0;
-            background: linear-gradient(90deg, #757575 0%, #4e4c49 43%, #161212 100%);
+            background: linear-gradient(90deg, #554c4c 0%, #ad6f1234 50%, #2c2c2ce0 100%);
         }
 
         .header-bar a {
-            color: rgb(247, 247, 247);
+            color: rgb(184, 184, 184);
             text-decoration: none;
         }
 
@@ -64,9 +69,10 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background-color: rgb(240, 240, 240);
+            background-color: rgba(240, 240, 240, 0.473);
             border-top: 1px solid #adadad;
             overflow: hidden;
+            
         }
 
         .task-title {
@@ -97,7 +103,7 @@
         .delete-link {
             text-decoration: none;
             font-weight: 900;
-            color: #ff8080;
+            color: #ec0000;
             font-size: 26px;
             line-height: 0;
             padding: 40px 0px;
@@ -136,10 +142,10 @@
 
 
         #add-link {
-            color: #ff8377;
+            color: #88ff00;
             text-decoration: none;
             font-size: 42px;
-            text-shadow: 1px 1px #ff857a;
+            text-shadow: 1px 1px #775d48;
         }
 
         #search-add-wrapper {
@@ -152,7 +158,7 @@
         input[type=text],
         input[type=password],
         textarea {
-            border: 1px solid #EB796F;
+            border: 1px solid #a53b31;
             border-radius: 5px;
             padding: 10px;
             width: 90%;
@@ -164,9 +170,9 @@
         }
 
         .button {
-            border: 1px solid #EB796F;
+            border: 1px solid #ff1e0a;
             background-color: #FAFAFA;
-            color: #EB796F;
+            color: #df1300;
             padding: 10px;
             font-size: 14px;
             border-radius: 5px;
@@ -176,11 +182,11 @@
 
         .card-body {
             padding: 20px;
-        }    </style>
+        }    
+    </style>
 </head>
 
 <body>
-   
     <div class="container">
         {% block content %} {% endblock content %}
     </div>
